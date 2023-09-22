@@ -1,0 +1,933 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.banner-bg {
+    width: 100%;
+    height: 90vh;
+    background: url(https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80) no-repeat;
+    position: relative;
+    background-size: 100%;
+    object-fit: cover;
+
+}
+
+
+.swiper {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.header-container {
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/* ---------------------------- Sildes-btn -------------------------- */
+
+.product-silde-btn {
+    width: 200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+.prev-btn-style  , .next-btn-style{
+    height: 60px;
+    width: 60px;
+    background-color: #2b2a29;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.prev-btn-style a  , .next-btn-style a{
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.prev-btn-style:hover  , .next-btn-style:hover{
+    
+    background-color: rgb(242, 98, 41);
+
+}
+
+
+
+
+
+
+/* -------------------------------------  SIDE BAR ------------------------------------------ */
+
+.list-side-bar {
+    width: 350px;
+    height: 100vh;
+    background-color: #000;
+    z-index: 999;
+    position: absolute;
+    padding: 30px;
+    display: none;
+    transition: .3s  ease-in-out;
+}
+
+.list-side-bar i {
+    color: #fff;
+    font-size: 30px;
+    margin-left: 260px;
+    cursor: pointer;
+}
+
+.list-side-bar i:hover {
+    color: rgb(144, 144, 213);
+}
+
+.list-side-bar ul {
+   
+    list-style: none;
+
+}
+
+
+.list-side-bar ul li {
+    margin: 30px 0;
+    
+}
+
+.list-side-bar ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    
+}
+
+.list-side-bar ul li a:hover {
+    color: rgb(144, 144, 213);
+    
+}
+
+
+
+
+
+/* -------------------------------------  list-sevices-top ------------------------------------------ */
+
+.list-sevices-top {
+    width: 100%;
+    position: absolute;
+ 
+}
+
+
+.list-sevices-top ul{
+    width: 1170px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b2a29;
+    clip-path: polygon(0 0, 100% 0, 96% 100%, 3% 100%);
+}
+
+.list-sevices-top ul li {
+    margin: 0 20px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.list-sevices-top ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    transition: .3s ease-in-out;
+}
+
+
+
+.list-sevices-top ul li a:hover{
+  
+    color: rgb(212, 146, 22);
+    
+}
+
+
+
+/* -------------------------------------  list-sevices-top ------------------------------------------ */
+
+
+.header-logo {
+    width: 1170px;
+    
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 2px 2px #FF0000;
+}
+
+
+/* -------------------------------------  navbar-container ------------------------------------------ */
+
+
+.navbar-container {
+    width: 1170px;
+    position: absolute;
+    margin-top: 200px;
+   
+}
+
+
+
+.navbar-container ul {
+
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.navbar-container ul li{
+    margin: 0 20px;
+    font-size: 20px;
+    list-style: none;
+}
+
+.dropdown1 , .dropdown2 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2b2a29;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* .dropdown1 option , .dropdown2 option {
+    width: 100px;
+    height: 50px;
+}
+ */
+
+.search-bar{
+   display: flex;
+
+}
+
+.search-bar input {
+    font-size: 16px;
+    padding: 15px;
+    width: 350px;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.search-bar label{
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    cursor: pointer;
+
+}
+
+.search-bar label.fa {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+#icon-bar{
+    font-size: 50px;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+
+}
+
+#icon-bar:hover {
+    color: rgb(212, 146, 22);
+}
+
+
+.cart {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
+.cart a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    transition: .3s ease-in-out;
+    font-size: 16px;
+}
+
+.cart a:hover{
+    color: rgb(212, 146, 22);
+}
+
+
+.log-out {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .3s ease-in-out;
+
+}
+
+.log-out a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+}
+
+.log-out a:hover{
+    color: rgb(212, 146, 22);
+}
+
+
+
+
+/* ------------------------------------- silde-header ------------------------------------------ */
+
+.silde-header {
+    width: 100%;
+    /* background-color: blue; */
+    height: auto;
+    position: absolute;
+    margin-top: 350px;
+ 
+}
+
+.silde-container {
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+
+.swiper0 .swiper-wrapper .swiper-slide {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.silde-show-item {
+    width: 800px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 2px 2px #FF0000;
+
+}
+
+.silde-show-item button {
+    margin-top: 30px;
+    width: 300px;
+    height: 50px;
+    background-color: #2b2a29;
+    color: #fff;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.silde-show-item button:hover {
+   
+    background-color: rgb(219, 168, 73);
+  
+}
+
+
+.swiper .swiper-button-prev , .swiper .swiper-button-next {
+    width: 50px;
+    height: 70px;
+  
+    background-color: #222;
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+
+
+
+.swiper .swiper-button-prev:hover , .swiper .swiper-button-next:hover {
+
+    background-color: #f33434;
+    color: #fff;
+}
+
+
+/* 
+.change-silde-btn {
+    position: absolute;
+    width: 1170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.left-btn {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(165, 165, 165 , 0.5);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.right-btn {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(165, 165, 165 , 0.5);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.left-btn a {
+    
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.right-btn a{
+   
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.right-btn:hover {
+    background-color: orange;
+}
+
+.left-btn:hover {
+    background-color: orange;
+} */
+
+
+
+
+/* ------------------------------------- main-contents------------------------------------------ */
+
+
+
+.main-contents {
+    margin: 50px 0;
+    width: 100%;
+    height: auto;
+}
+
+.main-container {
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+/* ---------------------------- Fashion-setting -------------------------- */
+
+.fashion-products {
+    width: 100%;
+    height: auto;
+    margin: 100px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fashion-products h1{
+    margin-bottom: 50px;
+}
+
+.fashion-grids {
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+   
+    
+}
+
+.fashion-item {
+    width: 350px;
+    height: 550px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0 30px 10px #f0f0f0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fashion-name {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+
+.fashion-name h4 {
+    font-size: 25px;
+ 
+}
+
+.fashion-name span{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+
+.fashion-item img {
+    margin-top: 30px;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+ 
+}
+
+.fashion-footer {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.fashion-footer a{
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    background: transparent;
+
+}
+
+.fashion-footer a:first-child {
+    color: #f26522;
+
+}
+
+.fashion-footer a:not(:first-child):hover {
+    color: #f26522;
+   
+}
+
+.fashion-footer a:first-child:hover {
+    color: #000;
+}
+
+
+
+/* ---------------------------- Electronic-setting -------------------------- */
+
+.electonic-products {
+    
+    width: 100%;
+    height: auto;
+    margin: 100px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: #2b2a29; */
+}
+
+.electonic-products h1{
+    margin-bottom: 50px;
+}
+
+.electonic-grids {
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+   
+    
+}
+
+.electonic-item {
+    width: 350px;
+    height: 550px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0 30px 10px #f0f0f0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.electonic-name {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+
+.electonic-name h4 {
+    font-size: 25px;
+ 
+}
+
+.electonic-name span{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+
+.electonic-item img {
+    margin-top: 30px;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+ 
+}
+
+.electonic-footer {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.electonic-footer a{
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    background: transparent;
+
+}
+
+.electonic-footer a:first-child {
+    color: #f26522;
+
+}
+
+.electonic-footer a:not(:first-child):hover {
+    color: #f26522;
+   
+}
+
+.electonic-footer a:first-child:hover {
+    color: #000;
+}
+
+
+
+
+
+/* ---------------------------- Jewellery-setting -------------------------- */
+
+.jewellery-products {
+    
+    width: 100%;
+    height: auto;
+    margin: 100px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: #2b2a29; */
+}
+
+.jewellery-products h1{
+    margin-bottom: 50px;
+}
+
+.jewellery-grids {
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+   
+    
+}
+
+.jewellery-item {
+    width: 350px;
+    height: 550px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0 30px 10px #f0f0f0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jewellery-name {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+.jewellery-name h4 {
+    font-size: 25px;
+ 
+}
+
+.jewellery-name span{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+
+.jewellery-item img {
+    margin-top: 30px;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+ 
+}
+
+.jewellery-footer {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jewellery-footer a{
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    background: transparent;
+
+}
+
+.jewellery-footer a:first-child {
+    color: #f26522;
+
+}
+
+.jewellery-footer a:not(:first-child):hover {
+    color: #f26522;
+   
+}
+
+.jewellery-footer a:first-child:hover {
+    color: #000;
+}
+
+
+
+/* ---------------------------- Footer -------------------------- */
+
+
+.footer-content {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    background-color: #2b2a29;
+}
+
+
+
+.footer-container {
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+
+.footer-logo {
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo h1{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 60px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.subscript {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+
+    position: relative;
+}
+
+.subscript input[type=email] {
+    width: 700px;
+    padding: 18px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #2b2a29;
+    border-bottom: 1px solid #fff;
+}
+
+
+.subscript label {
+    left: 800px;
+    top: 20px;
+    font-size: 20px;
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+
+}
+
+.subscript label:hover {
+    color: #fff;
+}
+
+
+
+.footer-menu {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+
+}
+
+.footer-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+
+}
+
+
+.footer-menu ul li {
+
+    margin: 0 12px;
+
+
+}
+
+.footer-menu ul li a {
+    font-size: 20px;
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+
+.footer-menu ul li a:hover {
+
+    color: #f5b222;
+}
+
+.footer-contact {
+    margin: 60px 0;
+
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    color: #fff;
+
+    text-align: center;
+}
+
+
+.footer-end-credit {
+
+    width: 100%;
+    height: 50px;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+  
+}
